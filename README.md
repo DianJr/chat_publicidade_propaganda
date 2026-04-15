@@ -1,6 +1,6 @@
 # Chatbot UNIFEBE - Publicidade e Propaganda
 
-Chatbot web para responder perguntas sobre o curso de Publicidade e Propaganda do Centro Universitário de Brusque - UNIFEBE.
+Chatbot  para responder perguntas sobre o curso de Publicidade e Propaganda do Centro Universitário de Brusque - UNIFEBE.
 
 ## Tecnologias
 
