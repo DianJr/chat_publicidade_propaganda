@@ -74,9 +74,3 @@ npm run telegram
 - Interface web moderna e responsiva
 - Bot do Telegram integrado
 - Sugestões rápidas de perguntas
-
-## Licença
-
-MIT
-
-
