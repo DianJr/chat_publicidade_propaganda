@@ -1,4 +1,4 @@
-/* Tema Social Media/Digital Marketing - Tela Cheia */
+/* Base */
 .container-chat {
   width: 100vw;
   height: 100vh;
@@ -9,7 +9,6 @@
   position: relative;
 }
 
-/* Efeito de gradiente animado sutil */
 .container-chat::before {
   content: '';
   position: absolute;
@@ -24,7 +23,6 @@
   z-index: 1;
 }
 
-/* Cabeçalho estilo Instagram Stories */
 .cabecalho-chat {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -39,7 +37,7 @@
   z-index: 3;
 }
 
-/* Avatar estilo Stories com gradiente */
+/* Header */
 .logo-cabecalho {
   flex-shrink: 0;
   z-index: 4;
@@ -65,7 +63,7 @@
   box-shadow: 0 6px 24px rgba(188, 24, 136, 0.3);
 }
 
-/* Conteúdo estilo perfil de rede social */
+/* Content */
 .conteudo-cabecalho {
   flex: 1;
   z-index: 4;
@@ -96,7 +94,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* Área de mensagens estilo feed de rede social */
+/* Messages */
 .area-mensagens {
   flex: 1;
   overflow-y: auto;
@@ -107,7 +105,6 @@
   z-index: 2;
 }
 
-/* Padrão sutil de fundo */
 .area-mensagens::before {
   content: '';
   position: absolute;
@@ -118,7 +115,7 @@
   pointer-events: none;
 }
 
-/* Mensagens estilo cards de stories */
+/* Message bubbles */
 .mensagem {
   margin-bottom: 20px;
   display: flex;
@@ -147,7 +144,6 @@
   justify-content: flex-start;
 }
 
-/* Avatar estilo perfil de rede social */
 .avatar-mensagem {
   flex-shrink: 0;
   width: 40px;
@@ -167,7 +163,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Conteúdo estilo mensagem de DM/Stories */
 .conteudo-mensagem {
   max-width: 70%;
   padding: 16px 20px;
@@ -203,7 +198,7 @@
   transform: translateY(-2px);
 }
 
-/* Loading estilo typing indicator */
+/* Loading */
 .conteudo-mensagem.carregando {
   display: flex;
   gap: 8px;
@@ -239,7 +234,7 @@
   }
 }
 
-/* Input estilo DM do Instagram */
+/* Input */
 .area-input {
   display: flex;
   padding: 20px 32px;
@@ -309,123 +304,7 @@
   transform: none;
 }
 
-/* Sugestões estilo manchetes de jornal */
-.sugestoes {
-  display: flex;
-  gap: 16px;
-  padding: 0 40px 24px 60px;
-  background: #1a1a1a;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  z-index: 3;
-  position: relative;
-}
-
-.sugestoes::-webkit-scrollbar {
-  height: 8px;
-}
-
-.sugestoes::-webkit-scrollbar-track {
-  background: #0a0a0a;
-  border-radius: 4px;
-}
-
-.sugestoes::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
-}
-
-.sugestoes::-webkit-scrollbar-thumb:hover {
-  background: #d4af37;
-}
-
-.sugestoes button {
-  padding: 14px 24px;
-  border: 2px solid #333;
-  background: #0a0a0a;
-  color: #999;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  white-space: nowrap;
-  font-weight: 600;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  overflow: hidden;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.sugestoes button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-  opacity: 0;
-}
-
-.sugestoes button span {
-  position: relative;
-  z-index: 1;
-}
-
-.sugestoes button:hover {
-  border-color: #d4af37;
-  color: #d4af37;
-  transform: translateY(-3px);
-  box-shadow: 
-    0 8px 20px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(212, 175, 55, 0.3);
-}
-
-.sugestoes button:hover::before {
-  opacity: 1;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .cabecalho-chat {
-    padding: 16px 20px;
-  }
-  
-  .conteudo-cabecalho h1 {
-    font-size: 20px;
-  }
-  
-  .mascote-cabecalho {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .conteudo-mensagem {
-    max-width: 80%;
-    font-size: 14px;
-  }
-  
-  .avatar-mensagem {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .area-input {
-    padding: 16px 20px;
-  }
-  
-  .area-input button {
-    width: 48px;
-    height: 48px;
-  }
-
-  .sugestoes {
-    padding: 0 20px 16px;
-  }
-
-  .area-mensagens {
-    padding: 20px 16px;
-  }
-}
-
-/* Sugestões estilo quick replies do Instagram */
+/* Quick replies */
 .sugestoes {
   display: flex;
   gap: 12px;

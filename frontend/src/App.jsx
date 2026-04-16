@@ -8,19 +8,19 @@ function App() {
   const [mensagens, setMensagens] = useState([
     {
       tipo: 'assistente',
-      conteudo: 'Olá! 🐓 Eu sou o Rodolfo, o mascote do curso de Publicidade e Propaganda da UNIFEBE! Estou aqui para responder todas as suas dúvidas sobre o curso. Como posso ajudar você hoje?'
+      conteudo: 'Olá! Eu sou o Rodolfo, o mascote do curso de Publicidade e Propaganda da UNIFEBE! Estou aqui para responder todas as suas dúvidas sobre o curso. Como posso ajudar você hoje?'
     }
   ]);
   const [entrada, setEntrada] = useState('');
   const [carregando, setCarregando] = useState(false);
   const fimMensagensRef = useRef(null);
 
-  const rolarParaBaixo = () => {
+  const scrollToBottom = () => {
     fimMensagensRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
-    rolarParaBaixo();
+    scrollToBottom();
   }, [mensagens]);
 
   const enviarMensagem = async () => {
@@ -122,16 +122,16 @@ function App() {
 
       <div className="sugestoes">
         <button onClick={() => setEntrada('Como é o curso?')}>
-          <span>📚 Sobre o curso</span>
+          <span> Sobre o curso</span>
         </button>
         <button onClick={() => setEntrada('Qual a duração do curso?')}>
-          <span>⏱️ Duração</span>
+          <span> Duração</span>
         </button>
         <button onClick={() => setEntrada('Quanto custa a mensalidade?')}>
-          <span>💰 Mensalidade</span>
+          <span> Mensalidade</span>
         </button>
         <button onClick={() => setEntrada('Onde posso trabalhar?')}>
-          <span>💼 Mercado</span>
+          <span> Mercado</span>
         </button>
       </div>
     </div>
