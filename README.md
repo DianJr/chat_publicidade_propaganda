@@ -1,10 +1,8 @@
 # Chatbot UNIFEBE - Publicidade e Propaganda
 
-<<<<<<< HEAD
+
 Assistente virtual para o curso de Publicidade e Propaganda da UNIFEBE, disponível em versão web e Telegram.
-=======
 Chatbot  para responder perguntas sobre o curso de Publicidade e Propaganda do Centro Universitário de Brusque - UNIFEBE.
->>>>>>> ed9137612186b2a483e2c14f96813525776486b3
 
 ## Tecnologias
 
