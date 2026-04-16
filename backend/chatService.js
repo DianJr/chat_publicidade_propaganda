@@ -11,6 +11,7 @@ function loadPrompt() {
     const promptPath = path.join(__dirname, '..', 'prompt.md');
     return fs.readFileSync(promptPath, 'utf-8');
   } catch (error) {
+    console.warn('Arquivo prompt.md não encontrado, usando prompt padrão');
     return 'Você é um assistente virtual do curso de Publicidade e Propaganda da UNIFEBE.';
   }
 }

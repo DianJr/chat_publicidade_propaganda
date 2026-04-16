@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.json({ 
     message: 'API Chatbot UNIFEBE - Publicidade e Propaganda',
     status: 'online'
@@ -32,6 +32,6 @@ app.post('/api/chat', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
   if (!process.env.GROQ_API_KEY) {
-    console.warn('⚠️  GROQ_API_KEY não configurada');
+    console.warn('GROQ_API_KEY não configurada');
   }
 });
